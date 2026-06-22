@@ -145,6 +145,65 @@
       .footer-legal{text-align:center}
     }
     @media(max-width:380px){.main-card{padding:1.25rem}}
+    /* ── MEJORAS VISUALES ── */
+body {
+  background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(0,201,167,0.08), transparent);
+}
+
+/* Brillo animado en botón principal */
+.btn-main {
+  position: relative;
+  overflow: hidden;
+}
+.btn-main::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: rgba(255,255,255,0.15);
+  transform: skewX(-20deg);
+  animation: shine 3s ease-in-out infinite;
+}
+@keyframes shine {
+  0% { left: -75%; }
+  30%, 100% { left: 125%; }
+}
+
+/* Hero más impactante */
+.hero { padding-bottom: clamp(1rem, 3vw, 2rem); }
+h1 { text-shadow: 0 0 60px rgba(0,201,167,0.15); }
+
+/* Pill con brillo */
+.pill {
+  box-shadow: 0 0 20px rgba(0,201,167,0.15);
+}
+
+/* Cards con borde accent al hover */
+.step, .feat {
+  transition: border-color 200ms, transform 200ms, box-shadow 200ms;
+}
+.step:hover, .feat:hover {
+  box-shadow: 0 8px 32px rgba(0,201,167,0.1);
+}
+
+/* Input con glow más suave */
+.url-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(0,201,167,0.15), 0 0 20px rgba(0,201,167,0.08);
+}
+
+/* Footer con separador accent */
+footer {
+  border-top: 1px solid var(--border);
+  background: linear-gradient(to top, rgba(0,201,167,0.03), transparent);
+}
+
+/* Main card más profunda */
+.main-card {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,201,167,0.08), 0 0 40px rgba(0,201,167,0.04);
+}
   </style>
 </head>
 <body>

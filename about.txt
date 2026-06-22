@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Montserrat Alternates
+- Font Title: Bona Nova
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/montserratalternates/v17/mFTvWacfw6zH4dthXcyms1lPpC8I_b0juU0J7K3RCJ1b0w.ttf
+- Font Source: https://fonts.gstatic.com/s/bonanova/v11/B50NF7ZCpX7fcHfvIUBJi6hqHK-CLA.ttf
 - Font License: undefined)
